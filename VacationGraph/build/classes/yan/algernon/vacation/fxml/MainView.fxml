@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yan.algernon.vacation.fxml.EmployeesController">
+   <children>
+      <ImageView fitHeight="985.0" fitWidth="1280.0" layoutX="40.0" layoutY="-23.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+         <image>
+            <Image url="@ametist.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="148.0" layoutY="203.0" prefHeight="700.0" prefWidth="1000.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <TableView fx:id="empTable" prefHeight="700.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="n1Column" prefWidth="136.0" text="Имя" />
+                <TableColumn fx:id="n2Column" prefWidth="141.0" text="Отчетсво" />
+                  <TableColumn fx:id="n3Column" prefWidth="159.0" text="Фамилия" />
+                  <TableColumn fx:id="n4Column" prefWidth="149.0" text="Должность" />
+                  <TableColumn fx:id="n5Column" prefWidth="138.0" text="Первый отпуск" />
+                  <TableColumn fx:id="n6Column" prefWidth="135.0" text="Второй отпуск" />
+                  <TableColumn fx:id="n7Column" prefWidth="221.0" text="Комментарии" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="845.0" layoutY="819.0" prefHeight="66.0" prefWidth="331.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="45.0" prefWidth="101.0" text="Добавить">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleEdit" prefHeight="44.0" prefWidth="92.0" text="Изменить">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleDelete" prefHeight="45.0" prefWidth="99.0" text="Удалить">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
